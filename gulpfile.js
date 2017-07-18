@@ -20,6 +20,18 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("css"))
 });
 
+gulp.task("sass", function() {
+  return gulp.src("scss/projects.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      errLogToConsole: true,
+    outputStyle: 'epanded',
+    sourceComments: 'map'
+    }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("css"))
+});
+
 gulp.task("watch", function() {
   gulp.watch("scss/**/*.scss", ["sass"]);
 
