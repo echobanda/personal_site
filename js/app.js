@@ -107,4 +107,25 @@ document.addEventListener("DOMContentLoaded", function() {
     toggle.find(".bar3").removeClass("change_bar3");
   });
 
+  // $("header").click(function() {
+  //     $(this).fadeOut(1000, function() {
+  //         $(this).css("background-color", "#800080").fadeIn(1000);
+  //     });
+  // });
+
+
+// var header = $('header');
+// console.log(header);
+//
+// header.on('mouseover', function() {
+//   $('body').css("background-color", "#800080");
+//
+// })
+//
+// header.on('mouseout', function() {
+//   $('body').css("background-color", "black");
+//
+// });
+
+
 });

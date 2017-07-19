@@ -21,11 +21,33 @@ body {
     text-decoration: underline;
     color: black;
   }
+
+
+  }
+
+  #splash {
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    background-color: #800080;
+    visibility: hidden;
+    z-index: 99;
+
+
 }
+
 
 html {
   height: 100%;
 }
+
+
 // Desktop flex
 @media only screen and (min-width: 1224px) {
   header {
@@ -44,6 +66,8 @@ html {
   .container {
     display: flex;
     flex: 1;
+
+
   }
 
   .content {
@@ -51,6 +75,7 @@ html {
     background-color: white;
     border: 1px black solid;
     padding-left: 10px;
+
 
     p:first-of-type {
       text-decoration: underline;
